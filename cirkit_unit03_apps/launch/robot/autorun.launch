@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find cirkit_unit03_bringup)/launch/cirkit_unit03_bringup.launch"/>
+  <include file="$(find cirkit_unit03_navigation)/launch/move_base.launch"/>
+
+  <!-- <node name="cirkit_unit03_monitor_client" pkg="cirkit_unit03_monitor" type="cirkit_unit03_monitor_client"/> -->
+</launch>
