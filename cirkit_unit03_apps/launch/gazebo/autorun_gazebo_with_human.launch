@@ -36,7 +36,7 @@
     name="timed_roslaunch_merger" output="screen">
   </node>
 
-  <include file="$(find steer_drive_controller)/launch/steer_drive_test_setting.launch" />
+  <include file="$(find cirkit_unit03_control)/launch/control_gazebo.launch" />
 
   <node pkg="topic_tools" type="relay" name="relay_base_scan" args="/cirkit_unit03/laser/base_scan /base_scan"/>
   <node pkg="topic_tools" type="relay" name="relay_base_scan2" args="/cirkit_unit03/laser/base_scan2 /base_scan2"/>
