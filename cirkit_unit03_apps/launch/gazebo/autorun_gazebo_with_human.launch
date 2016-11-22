@@ -26,7 +26,7 @@
     <include file="$(find point_cloud_reducer)/launch/kinect_downsampler.launch"/>
     
   <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
-    args="6 cirkit_unit03_amcl amcl_diff.launch"
+    args="6 cirkit_unit03_amcl amcl_diff_gazebo.launch"
     name="timed_roslaunch_amcl" output="screen">
   </node>
 
@@ -35,4 +35,12 @@
     args="1 cirkit_unit03_control laserscan_merger.launch"
     name="timed_roslaunch_merger" output="screen">
   </node>
+
+  <include file="$(find steer_drive_controller)/launch/steer_drive_test_setting.launch" />
+
+  <node pkg="topic_tools" type="relay" name="relay_base_scan" args="/cirkit_unit03/laser/base_scan /base_scan"/>
+  <node pkg="topic_tools" type="relay" name="relay_base_scan2" args="/cirkit_unit03/laser/base_scan2 /base_scan2"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_viz)/rviz/gazebo/autorun_gazebo.rviz" required="true" />
+
 </launch>
