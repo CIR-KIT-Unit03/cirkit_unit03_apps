@@ -1,0 +1,20 @@
+<launch>
+  <include file="$(find cirkit_unit03_gazebo)/launch/cirkit_unit03_clearpath_playpen.launch"/>
+
+  <!--include file="$(find cirkit_unit03_navigation_gazebo)/launch/move_base.launch"/-->
+  <!--include file="$(find cirkit_unit03_navigation_gazebo)/amcl/amcl_diff.launch" /-->
+
+  <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
+    args="4 cirkit_unit03_navigation_gazebo move_base.launch"
+    name="timed_roslaunch_move_base" output="screen">
+  </node>
+  <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
+    args="6 cirkit_unit03_navigation_gazebo amcl_diff.launch"
+    name="timed_roslaunch_amcl" output="screen">
+  </node>
+  <!-- laserscan_merger should be executed after all launch files are called --> 
+  <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
+    args="1 cirkit_unit03_control laserscan_merger.launch"
+    name="timed_roslaunch_merger" output="screen">
+  </node>
+</launch>
