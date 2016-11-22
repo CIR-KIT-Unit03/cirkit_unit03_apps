@@ -43,5 +43,12 @@ qtcreator-*
 # Emacs
 .#*
 
+# Vim
+# vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
 # Catkin custom files
 CATKIN_IGNORE
