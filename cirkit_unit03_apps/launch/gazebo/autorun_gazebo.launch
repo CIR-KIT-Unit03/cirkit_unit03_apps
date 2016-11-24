@@ -17,7 +17,7 @@
 
   <!-- laserscan_merger should be executed after all launch files are called --> 
   <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
-    <arg name="time" value="7" />
+    <arg name="time" value="6" />
     <arg name="pkg" value="cirkit_unit03_control" />
     <arg name="file" value="laserscan_merger.launch" />
     <arg name="node_name" value="timed_laser_scan_merger" />
