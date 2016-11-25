@@ -1,6 +1,15 @@
 <launch>
+  <!-- Bringup robot driver and sensor drivers-->
   <include file="$(find cirkit_unit03_bringup)/launch/cirkit_unit03_bringup.launch"/>
+
   <include file="$(find cirkit_unit03_move_base)/launch/move_base.launch"/>
 
-  <!-- <node name="cirkit_unit03_monitor_client" pkg="cirkit_unit03_monitor" type="cirkit_unit03_monitor_client"/> -->
+  <include file="$(find cirkit_unit03_amcl)/launch/amcl_diff.launch" />
+
+  <include file="$(find cirkit_unit03_control)/launch/laserscan_merger.launch" />
+
+  <include file="$(find cirkit_unit03_control)/launch/urg_laser_filter.launch" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_viz)/rviz/robot/autorun3.rviz" required="true" />
+
 </launch>
