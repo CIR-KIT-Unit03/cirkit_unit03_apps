@@ -10,6 +10,6 @@
 
   <include file="$(find cirkit_unit03_control)/launch/urg_laser_filter.launch" />
 
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_viz)/rviz/gazebo/autorun.rviz" required="true" />
- 
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_viz)/rviz/robot/autorun.rviz" required="true" />
+
 </launch>
