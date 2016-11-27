@@ -12,9 +12,11 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>cirkit_unit03_amcl</exec_depend>
+  <exec_depend>cirkit_unit03_bringup</exec_depend>
   <exec_depend>cirkit_unit03_control</exec_depend>
   <exec_depend>cirkit_unit03_gazebo</exec_depend>
   <exec_depend>cirkit_unit03_move_base</exec_depend>
+  <exec_depend>cirkit_unit03_viz</exec_depend>
   <exec_depend>rviz</exec_depend>
   <exec_depend>steer_drive_controller</exec_depend>
   <exec_depend>timed_roslaunch</exec_depend>
