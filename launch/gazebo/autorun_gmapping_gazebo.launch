@@ -1,0 +1,32 @@
+<launch>
+  <include file="$(find cirkit_unit03_gazebo)/launch/cirkit_unit03_clearpath_playpen.launch"/>
+
+  <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+    <arg name="time" value="2" />
+    <arg name="pkg" value="cirkit_unit03_move_base" />
+    <arg name="file" value="move_base_gazebo.launch" />
+    <arg name="node_name" value="timed_move_base_gazebo" />
+  </include>
+
+  <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+    <arg name="time" value="3" />
+    <arg name="pkg" value="cirkit_unit03_gmapping" />
+    <arg name="file" value="cirkit_unit03_gmapping_gazebo.launch" />
+    <arg name="node_name" value="timed_gmapping_gazebo" />
+  </include>
+
+  <!-- laserscan_merger should be executed after all launch files are called --> 
+  <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+    <arg name="time" value="6" />
+    <arg name="pkg" value="cirkit_unit03_control" />
+    <arg name="file" value="laserscan_merger.launch" />
+    <arg name="node_name" value="timed_laser_scan_merger" />
+  </include>
+
+  <include file="$(find cirkit_unit03_control)/launch/control_gazebo.launch" />
+
+  <node pkg="topic_tools" type="relay" name="relay_base_scan" args="/cirkit_unit03/laser/base_scan /base_scan"/>
+  <node pkg="topic_tools" type="relay" name="relay_base_scan2" args="/cirkit_unit03/laser/base_scan2 /base_scan2"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_apps)/rviz/gazebo/autorun_gazebo.rviz" required="true" />
+</launch>

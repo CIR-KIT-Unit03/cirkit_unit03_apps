@@ -1,0 +1,15 @@
+<!--
+This file is supposed to be launched for necessary configuration for gmapping.
+gmapping node is assumed to be launched from command line with rosrun with args added.
+-->
+<launch>
+  <!-- Bringup robot driver and sensor drivers-->
+  <include file="$(find cirkit_unit03_bringup)/launch/cirkit_unit03_bringup.launch"/>
+  
+  <include file="$(find cirkit_unit03_control)/launch/laserscan_merger.launch" />
+
+  <include file="$(find cirkit_unit03_control)/launch/urg_laser_filter.launch" />
+  
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_viz)/rviz/robot/autorun3.rviz" required="true" />
+
+</launch>
