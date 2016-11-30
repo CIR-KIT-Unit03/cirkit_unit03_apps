@@ -1,0 +1,743 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /RobotModel1/Links1
+        - /Sensing1
+        - /Sensing1/SensorCloud1
+        - /Navigation1
+        - /Navigation1/teb_localplanner1
+        - /Navigation1/dwa_localplanner1
+        - /Navigation1/NextWaypointMarker1
+        - /HumanDetect1
+      Splitter Ratio: 0.5
+    Tree Height: 723
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: LaserScanMuti
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_bottom_lrf:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_top_3durg:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_top_3durg_rgbd_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_front_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_rear_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        merged_lrf:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_bottom_lrf:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_front_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_rear_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        steer:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        steer_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        steer_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        base_link:
+          Value: true
+        camera_link:
+          Value: true
+        front_bottom_lrf:
+          Value: true
+        front_top_3durg:
+          Value: true
+        front_top_3durg_rgbd_optical_frame:
+          Value: true
+        left_front_wheel:
+          Value: true
+        left_rear_wheel:
+          Value: true
+        map:
+          Value: true
+        merged_lrf:
+          Value: true
+        odom:
+          Value: true
+        rear_bottom_lrf:
+          Value: true
+        right_front_wheel:
+          Value: true
+        right_rear_wheel:
+          Value: true
+        steer:
+          Value: true
+        steer_left:
+          Value: true
+        steer_right:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            base_link:
+              camera_link:
+                {}
+              front_bottom_lrf:
+                {}
+              front_top_3durg:
+                front_top_3durg_rgbd_optical_frame:
+                  {}
+              left_rear_wheel:
+                {}
+              merged_lrf:
+                {}
+              rear_bottom_lrf:
+                {}
+              right_rear_wheel:
+                {}
+              steer:
+                {}
+              steer_left:
+                left_front_wheel:
+                  {}
+              steer_right:
+                right_front_wheel:
+                  {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 255; 255
+          Color Transformer: Intensity
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 999999
+          Min Color: 0; 0; 0
+          Min Intensity: 0
+          Name: MergedCloud
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.1
+          Style: Flat Squares
+          Topic: /merged_cloud
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 0; 85; 255
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 4096
+          Min Color: 0; 0; 0
+          Min Intensity: 0
+          Name: SensorCloud
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.01
+          Style: Boxes
+          Topic: /camera/depth/points
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: false
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/LaserScan
+          Color: 85; 85; 255
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 4096
+          Min Color: 0; 0; 0
+          Min Intensity: 0
+          Name: LaserScanFront
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.3
+          Style: Flat Squares
+          Topic: /base_scan
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.371993
+            Min Value: -9.20868
+            Value: true
+          Axis: X
+          Channel Name: intensity
+          Class: rviz/LaserScan
+          Color: 255; 0; 127
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 4096
+          Min Color: 0; 0; 0
+          Min Intensity: 0
+          Name: LaserScanRear
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.3
+          Style: Flat Squares
+          Topic: /base_scan2
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 0.75
+            Min Value: -0.241159
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/LaserScan
+          Color: 255; 255; 255
+          Color Transformer: AxisColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 4096
+          Min Color: 0; 0; 0
+          Min Intensity: 0
+          Name: LaserScanLowerStep
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.1
+          Style: Flat Squares
+          Topic: /base_scan1_fix
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 10
+            Min Value: -10
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/LaserScan
+          Color: 0; 255; 0
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 4096
+          Min Color: 0; 0; 0
+          Min Intensity: 0
+          Name: LaserScanMuti
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.3
+          Style: Flat Squares
+          Topic: /scan_multi
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+      Enabled: true
+      Name: Sensing
+    - Class: rviz/Group
+      Displays:
+        - Angle Tolerance: 0.1
+          Class: rviz/Odometry
+          Color: 255; 25; 0
+          Enabled: false
+          Keep: 100
+          Length: 1
+          Name: Odometry
+          Position Tolerance: 0.1
+          Topic: /odom
+          Value: false
+        - Arrow Length: 0.3
+          Class: rviz/PoseArray
+          Color: 255; 25; 0
+          Enabled: false
+          Name: PoseArray
+          Topic: /particlecloud
+          Unreliable: false
+          Value: false
+        - Alpha: 0.7
+          Class: rviz/Map
+          Color Scheme: map
+          Draw Behind: false
+          Enabled: true
+          Name: StaticMap
+          Topic: /map
+          Unreliable: false
+          Value: true
+        - Alpha: 0.7
+          Class: rviz/Map
+          Color Scheme: costmap
+          Draw Behind: true
+          Enabled: true
+          Name: GlobalCostMap
+          Topic: /move_base/global_costmap/costmap
+          Unreliable: false
+          Value: true
+        - Alpha: 0.7
+          Class: rviz/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: LocalCostMap
+          Topic: /move_base/local_costmap/costmap
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Class: rviz/Polygon
+          Color: 25; 255; 0
+          Enabled: true
+          Name: GlobalFootPrint
+          Topic: /move_base/global_costmap/footprint
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Class: rviz/Polygon
+          Color: 25; 255; 0
+          Enabled: true
+          Name: LocalFootPrint
+          Topic: /move_base/local_costmap/footprint
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 11.1779
+            Min Value: 0.805977
+            Value: true
+          Axis: X
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 255; 255
+          Color Transformer: AxisColor
+          Decay Time: 0
+          Enabled: false
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 4096
+          Min Color: 0; 0; 0
+          Min Intensity: 0
+          Name: PointCloud2
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.01
+          Style: Flat Squares
+          Topic: /move_base/TrajectoryPlannerROS/cost_cloud
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: false
+        - Class: rviz/Group
+          Displays:
+            - Alpha: 1
+              Buffer Length: 1
+              Class: rviz/Path
+              Color: 25; 255; 0
+              Enabled: true
+              Head Diameter: 0.3
+              Head Length: 0.2
+              Length: 0.3
+              Line Style: Lines
+              Line Width: 0.03
+              Name: GobalPathPlan
+              Offset:
+                X: 0
+                Y: 0
+                Z: 0
+              Pose Style: None
+              Radius: 0.03
+              Shaft Diameter: 0.1
+              Shaft Length: 0.1
+              Topic: /move_base/TebLocalPlannerROS/global_plan
+              Unreliable: false
+              Value: true
+            - Alpha: 1
+              Buffer Length: 1
+              Class: rviz/Path
+              Color: 255; 85; 255
+              Enabled: true
+              Head Diameter: 0.3
+              Head Length: 0.2
+              Length: 0.3
+              Line Style: Billboards
+              Line Width: 0.5
+              Name: LocalPathPlan
+              Offset:
+                X: 0
+                Y: 0
+                Z: 0
+              Pose Style: None
+              Radius: 0.03
+              Shaft Diameter: 0.1
+              Shaft Length: 0.1
+              Topic: /move_base/TebLocalPlannerROS/local_plan
+              Unreliable: false
+              Value: true
+          Enabled: false
+          Name: teb_localplanner
+        - Class: rviz/Group
+          Displays:
+            - Alpha: 1
+              Buffer Length: 1
+              Class: rviz/Path
+              Color: 255; 85; 255
+              Enabled: true
+              Head Diameter: 0.3
+              Head Length: 0.2
+              Length: 0.3
+              Line Style: Lines
+              Line Width: 0.03
+              Name: GlobalPathPlan
+              Offset:
+                X: 0
+                Y: 0
+                Z: 0
+              Pose Style: None
+              Radius: 0.03
+              Shaft Diameter: 0.1
+              Shaft Length: 0.1
+              Topic: /move_base/DWAPlannerROS/global_plan
+              Unreliable: false
+              Value: true
+            - Alpha: 1
+              Buffer Length: 1
+              Class: rviz/Path
+              Color: 255; 85; 255
+              Enabled: true
+              Head Diameter: 0.3
+              Head Length: 0.2
+              Length: 0.3
+              Line Style: Billboards
+              Line Width: 0.5
+              Name: LocalPathPlan
+              Offset:
+                X: 0
+                Y: 0
+                Z: 0
+              Pose Style: None
+              Radius: 0.03
+              Shaft Diameter: 0.1
+              Shaft Length: 0.1
+              Topic: /move_base/DWAPlannerROS/local_plan
+              Unreliable: false
+              Value: true
+          Enabled: true
+          Name: dwa_localplanner
+        - Class: rviz/Group
+          Displays:
+            - Alpha: 1
+              Buffer Length: 1
+              Class: rviz/Path
+              Color: 255; 85; 255
+              Enabled: true
+              Head Diameter: 0.3
+              Head Length: 0.2
+              Length: 0.3
+              Line Style: Lines
+              Line Width: 0.03
+              Name: GlobalPathPlan
+              Offset:
+                X: 0
+                Y: 0
+                Z: 0
+              Pose Style: None
+              Radius: 0.03
+              Shaft Diameter: 0.1
+              Shaft Length: 0.1
+              Topic: /move_base/TrajectoryPlannerROS/global_plan
+              Unreliable: false
+              Value: true
+            - Alpha: 1
+              Buffer Length: 1
+              Class: rviz/Path
+              Color: 255; 85; 255
+              Enabled: true
+              Head Diameter: 0.3
+              Head Length: 0.2
+              Length: 0.3
+              Line Style: Billboards
+              Line Width: 0.5
+              Name: LocalPathPlan
+              Offset:
+                X: 0
+                Y: 0
+                Z: 0
+              Pose Style: None
+              Radius: 0.03
+              Shaft Diameter: 0.1
+              Shaft Length: 0.1
+              Topic: /move_base/TrajectoryPlannerROS/local_plan
+              Unreliable: false
+              Value: true
+          Enabled: false
+          Name: trajectory_localplanner
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /next_waypoint
+          Name: NextWaypointMarker
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+      Enabled: true
+      Name: Navigation
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/InteractiveMarkers
+          Enable Transparency: true
+          Enabled: true
+          Name: WayPoints
+          Show Axes: false
+          Show Descriptions: true
+          Show Visual Aids: false
+          Update Topic: /cube/update
+          Value: true
+        - Class: jsk_rviz_plugin/BoundingBoxArray
+          Enabled: true
+          Name: Clustering
+          Topic: /clustering_result
+          Unreliable: false
+          Value: true
+          alpha: 0.8
+          color: 85; 255; 255
+          coloring: Flat color
+          line width: 0.005
+          only edge: false
+          show coords: false
+        - Class: jsk_rviz_plugin/BoundingBoxArray
+          Enabled: true
+          Name: Recognized
+          Topic: /recognized_result
+          Unreliable: false
+          Value: true
+          alpha: 0.8
+          color: 0; 0; 255
+          coloring: Flat color
+          line width: 0.005
+          only edge: false
+          show coords: false
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: /waypoint_markers
+          Name: MarkerArray_WayPoints
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+      Enabled: true
+      Name: HumanDetect
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/ThirdPersonFollower
+      Distance: 27.0503
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 5.67418
+        Y: 0.78495
+        Z: 8.04663e-07
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.629801
+      Target Frame: map
+      Value: ThirdPersonFollower (rviz)
+      Yaw: 0.660402
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1002
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000020f00000362fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000362000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000242fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000002800000242000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000067b0000003efc0100000002fb0000000800540069006d006501000000000000067b0000027200fffffffb0000000800540069006d00650100000000000004500000000000000000000004660000036200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1659
+  X: 49
+  Y: 14
