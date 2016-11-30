@@ -1,7 +1,7 @@
 <launch>
   <include file="$(find cirkit_unit03_gazebo)/launch/cirkit_unit03_clearpath_playpen.launch"/>
 
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find cirkit_unit03_move_base)/map/playpen_map.yaml" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find cirkit_unit03_maps)/map/playpen_map.yaml" />
 
   <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
     <arg name="time" value="2" />
