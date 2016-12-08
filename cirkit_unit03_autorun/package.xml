@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>cirkit_unit03_apps</name>
+  <name>cirkit_unit03_autorun</name>
   <version>0.1.0</version>
   <description>The application package for CIR-KIT-Unit03</description>
 

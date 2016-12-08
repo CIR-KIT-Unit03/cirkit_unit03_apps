@@ -30,5 +30,5 @@
   <node pkg="topic_tools" type="relay" name="relay_base_scan" args="/cirkit_unit03/laser/base_scan /base_scan"/>
   <node pkg="topic_tools" type="relay" name="relay_base_scan2" args="/cirkit_unit03/laser/base_scan2 /base_scan2"/>
 
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_apps)/rviz/gazebo/autorun_gazebo.rviz" required="true" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_autorun)/rviz/gazebo/autorun_gazebo.rviz" required="true" />
 </launch>

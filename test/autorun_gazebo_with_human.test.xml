@@ -1,3 +1,0 @@
-<launch>
-    <include file="$(find cirkit_unit03_apps)/launch/gazebo/autorun_gazebo_with_human.launch" />
-</launch>

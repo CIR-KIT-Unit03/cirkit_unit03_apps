@@ -10,6 +10,6 @@ gmapping node is assumed to be launched from command line with rosrun with args 
 
   <include file="$(find cirkit_unit03_control)/launch/urg_laser_filter.launch" />
   
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_apps)/rviz/robot/autorun3.rviz" required="true" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cirkit_unit03_autorun)/rviz/robot/autorun3.rviz" required="true" />
 
 </launch>

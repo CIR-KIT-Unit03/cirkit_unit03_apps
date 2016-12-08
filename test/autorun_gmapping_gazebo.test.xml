@@ -1,3 +1,0 @@
-<launch>
-    <include file="$(find cirkit_unit03_apps)/launch/gazebo/autorun_gmapping_gazebo.launch" />
-</launch>
