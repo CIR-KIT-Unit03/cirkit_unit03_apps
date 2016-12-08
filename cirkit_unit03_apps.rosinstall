@@ -1,0 +1,8 @@
+- git:
+    local-name: cirkit_unit03_apps/human_detector
+    uri: https://github.com/CIR-KIT/human_detector.git
+    version: master
+- git:
+    local-name: cirkit_unit03_apps/timed_roslaunch
+    uri: https://github.com/MoriKen254/timed_roslaunch.git
+    version: master
