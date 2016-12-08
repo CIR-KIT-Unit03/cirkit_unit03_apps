@@ -22,12 +22,12 @@ Supported ROS version is **Indigo**.
 $ cd <catkin_ws>/src
 $ git clone https://github.com/CIR-KIT-Unit03/cirkit_unit03_pkgs.git
 ```
-##### 2. Clone this repository.
+##### 3. Clone this repository.
 ```bash
 $ cd <catkin_ws>/src
 $ git clone https://github.com/CIR-KIT-Unit03/cirkit_unit03_apps.git
 ```
-##### 3. Download required packages by wstool.
+##### 4. Download required packages by wstool.
 ```bash
 $ cd <catkin_ws>
 $ wstool init src
@@ -35,12 +35,12 @@ $ wstool merge -t src src/cirkit_unit03_pkgs/cirkit_unit03_pkgs.rosinstall
 $ wstool merge -t src src/cirkit_unit03_apps/cirkit_unit03_apps.rosinstall
 $ wstool update -t src
 ```
-##### 4. Download depended packages by rosdep.
+##### 5. Download depended packages by rosdep.
 ```bash
 $ cd <catkin_ws>
 $ rosdep install -i -r -y --from-paths src --ignore-src
 ```
-##### 5. Build packages, and set the path for the packages.
+##### 6. Build packages, and set the path for the packages.
 ```bash
 $ cd <catkin_ws>
 $ catkin_make
