@@ -1,9 +1,9 @@
-# cirkit_unit03_apps [![Build Status](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps.svg?branch)](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps) [![Slack](https://img.shields.io/badge/Slack-CIR--KIT-blue.svg)](http://cir-kit.slack.com/messages/unit03)
+# cirkit_unit03_apps [![Build Status](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps.svg?branch)](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps) [![Slack](https://img.shields.io/badge/Slack-CIR--KIT-blue.svg)](http://cir-kit.slack.com/messages/unit03_apps)
 Application packages for CIR-KIT-Unit03
 
 ## About
-This repository is the application package for CIR-KIT-Unit03.
-Therefore, you **NEED TO INSTALL [cirkit_unit03_pkgs](https://github.com/CIR-KIT-Unit03/cirkit_unit03_pkgs)**.
+This repository is the application package for CIR-KIT-Unit03.  
+Therefore, you **NEED TO INSTALL [cirkit_unit03_pkgs](https://github.com/CIR-KIT-Unit03/cirkit_unit03_pkgs)**.  
 Supported ROS version is **Indigo**.
 
 #### Dependent packages for apps
