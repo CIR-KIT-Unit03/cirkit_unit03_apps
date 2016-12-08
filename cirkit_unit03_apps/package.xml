@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cirkit_unit03_apps</name>
+  <version>0.1.0</version>
+  <description>The application package for CIR-KIT-Unit03</description>
+
+  <maintainer email="p595201m@mail.kyutech.jp">Masaru Morita</maintainer>
+  <maintainer email="k104073r@mail.kyutech.jp">Ryodo Tanaka</maintainer>
+  <license>BSD</license>
+  <url type="repository">https://github.com/CIR-KIT-Unit03/cirkit_unit03_apps.git</url>
+  <url type="bugtracker">https://github.com/CIR-KIT-Unit03/cirkit_unit03_apps/issues</url>
+  <author email="cirkit.infomation@gmail.com">CIR-KIT</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>cirkit_unit03_pkgs</exec_depend>
+  <exec_depend>map_server</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>point_cloud_reducer</exec_depend>
+  <exec_depend>steer_drive_controller</exec_depend>
+  <exec_depend>timed_roslaunch</exec_depend>
+  <exec_depend>topic_tools</exec_depend>
+
+  <export>
+  </export>
+</package>
