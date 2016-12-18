@@ -6,4 +6,6 @@ yes | apt-add-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl; apt-get upda
 rosdep install -i -r -y --from-paths . --ignore-src --rosdistro indigo
 cd ..
 catkin_make
+source devel/setup.bash
+rm -rf build/ devel/ 
 cd src
