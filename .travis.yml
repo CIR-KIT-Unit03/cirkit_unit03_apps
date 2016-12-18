@@ -8,9 +8,9 @@ compiler:
   - gcc
 notifications:
   email:
-    on_success: change
-    on_failue: always
-  slack: cir-kit:ScokSrDzpegEnxbcXuxmWAhz
+    on_success: never #change
+    on_failue: never #always
+#  slack: cir-kit:ScokSrDzpegEnxbcXuxmWAhz
 env:
   matrix:
     - ROS_DISTRO=indigo ROS_REPO=ros              UPSTREAM_WORKSPACE=cirkit_unit03_apps_travis.rosinstall BEFORE_SCRIPT=/root/ws_moveit/src/cirkit_unit03_apps/before_script.sh
