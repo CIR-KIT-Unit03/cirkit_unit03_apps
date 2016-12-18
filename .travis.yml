@@ -13,12 +13,9 @@ notifications:
   slack: cir-kit:ScokSrDzpegEnxbcXuxmWAhz
 env:
   matrix:
-    - ROS_DISTRO=indigo ROS_REPO=ros              UPSTREAM_WORKSPACE=cirkit_unit03_apps_travis.rosinstall
-    - ROS_DISTRO=indigo ROS_REPO=ros-shadow-fixed UPSTREAM_WORKSPACE=cirkit_unit03_apps_travis.rosinstall
-    - ROS_DISTRO=indigo TEST=clang-format         UPSTREAM_WORKSPACE=cirkit_unit03_apps_travis.rosinstall
-before_install:
-  # Install PCL
-  - yes | sudo apt-add-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl; sudo apt-get update -qq; sudo apt-get install -y libpcl-all;
+    - ROS_DISTRO=indigo ROS_REPO=ros              UPSTREAM_WORKSPACE=cirkit_unit03_apps_travis.rosinstall BEFORE_SCRIPT=yes | sudo apt-add-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl; sudo apt-get update -qq; sudo apt-get install -y libpcl-all;
+    - ROS_DISTRO=indigo ROS_REPO=ros-shadow-fixed UPSTREAM_WORKSPACE=cirkit_unit03_apps_travis.rosinstall BEFORE_SCRIPT=yes | sudo apt-add-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl; sudo apt-get update -qq; sudo apt-get install -y libpcl-all;
+    - ROS_DISTRO=indigo TEST=clang-format         UPSTREAM_WORKSPACE=cirkit_unit03_apps_travis.rosinstall BEFORE_SCRIPT=yes | sudo apt-add-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl; sudo apt-get update -qq; sudo apt-get install -y libpcl-all;
 before_script:
   - git clone -q https://github.com/ros-planning/moveit_ci.git .moveit_ci
 script:
