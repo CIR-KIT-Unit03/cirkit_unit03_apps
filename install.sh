@@ -23,13 +23,13 @@ source devel/setup.bash
 while getopts t OPT
 do
   case $OPT in
-    "t" ) FLG_A="TRUE" ;;
+    "t" ) FLG_T="TRUE" ;;
       * ) echo "Usage: $CMDNAME [-t]" 1>&2
           exit 1 ;;
   esac
 done
 
-if [ "$FLG_A" = "TRUE" ]; then
+if [ "$FLG_T" = "TRUE" ]; then
   catkin_make run_tests
   catkin_test_results
 fi
