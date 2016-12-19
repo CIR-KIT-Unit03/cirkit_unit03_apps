@@ -16,7 +16,7 @@ Supported ROS version is **Indigo**.
 
 ---
 ## Installation
-### Fron install script
+### From install script
 ##### 1. Clone this repository.
 ```bash
 $ cd <catkin_ws>/src
