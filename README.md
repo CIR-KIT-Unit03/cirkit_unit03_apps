@@ -16,11 +16,32 @@ Supported ROS version is **Indigo**.
 
 ---
 ## Installation
+### Fron install script
+##### 1. Clone this repository.
+```bash
+$ cd <catkin_ws>/src
+$ git clone https://github.com/CIR-KIT-Unit03/cirkit_unit03_apps.git
+```
+
+##### 2. Run install script
+- Without test
+```bash
+$ cd <catkin_ws>/src/cirkit_unit03_apps
+$ sh install.sh
+```
+
+- With test
+```bash
+$ cd <catkin_ws>/src/cirkit_unit03_apps
+$ sh install.sh -t
+```
+
+### From command line
 ##### 1. Create **catkinized**  workspace.
 ##### 2. Clone cirkit_unit03_pkgs repository.
 ```bash
 $ cd <catkin_ws>/src
-$ git clone https://github.com/CIR-KIT-Unit03/cirkit_unit03_pkgs.git
+$ git clone https://github.com/cir-kit-unit03/cirkit_unit03_pkgs.git
 ```
 ##### 3. Clone this repository.
 ```bash
