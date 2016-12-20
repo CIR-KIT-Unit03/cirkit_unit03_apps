@@ -1,5 +1,5 @@
 <launch>
-  <include file="$(find cirkit_unit03_apps)/launch/gazebo/autorun_gazebo.launch"/>
+  <include file="$(find cirkit_unit03_autorun)/launch/gazebo/autorun_gazebo.launch"/>
   <!-- spawn human -->
   <include file="$(find human_model_gazebo)/launch/spawn_human_playpen.launch"/>
   <!-- downsample for calculation performance of human detection -->

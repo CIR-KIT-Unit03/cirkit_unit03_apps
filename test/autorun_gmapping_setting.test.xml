@@ -1,3 +1,0 @@
-<launch>
-    <include file="$(find cirkit_unit03_apps)/launch/robot/autorun_gmapping_setting.launch" />
-</launch>
