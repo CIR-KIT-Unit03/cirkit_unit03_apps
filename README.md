@@ -24,17 +24,15 @@ $ git clone https://github.com/CIR-KIT-Unit03/cirkit_unit03_apps.git
 ```
 
 ##### 2. Run install script
-- Without test
 ```bash
 $ cd <catkin_ws>/src/cirkit_unit03_apps
 $ sh install.sh
 ```
-
-- With test
-```bash
-$ cd <catkin_ws>/src/cirkit_unit03_apps
-$ sh install.sh -t
-```
+- optional arguments:
+  * -h: show the help message and exit
+  * -i: eneble `rosdep init`
+  * -t: enable `catkin_make run_tests`
+  * -r: remove existing `src/.rosinstall`
 
 ### From command line
 ##### 1. Create **catkinized**  workspace.
