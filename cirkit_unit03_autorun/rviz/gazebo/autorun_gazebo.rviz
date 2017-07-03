@@ -13,7 +13,7 @@ Panels:
         - /Navigation1/NextWaypointMarker1
         - /HumanDetect1
       Splitter Ratio: 0.5
-    Tree Height: 723
+    Tree Height: 488
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -22,7 +22,7 @@ Panels:
       - /2D Nav Goal1
       - /Publish Point1
     Name: Tool Properties
-    Splitter Ratio: 0.588679
+    Splitter Ratio: 0.588679016
   - Class: rviz/Views
     Expanded:
       - /Current View1
@@ -32,7 +32,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScanMuti
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -42,7 +42,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.03
+        Line Width: 0.0299999993
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -64,71 +64,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        camera_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_bottom_lrf:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_top_3durg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_top_3durg_rgbd_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_front_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_rear_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        merged_lrf:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rear_bottom_lrf:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_front_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_rear_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        steer:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        steer_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        steer_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -140,70 +75,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_link:
-          Value: true
-        camera_link:
-          Value: true
-        front_bottom_lrf:
-          Value: true
-        front_top_3durg:
-          Value: true
-        front_top_3durg_rgbd_optical_frame:
-          Value: true
-        left_front_wheel:
-          Value: true
-        left_rear_wheel:
-          Value: true
-        map:
-          Value: true
-        merged_lrf:
-          Value: true
-        odom:
-          Value: true
-        rear_bottom_lrf:
-          Value: true
-        right_front_wheel:
-          Value: true
-        right_rear_wheel:
-          Value: true
-        steer:
-          Value: true
-        steer_left:
-          Value: true
-        steer_right:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        map:
-          odom:
-            base_link:
-              camera_link:
-                {}
-              front_bottom_lrf:
-                {}
-              front_top_3durg:
-                front_top_3durg_rgbd_optical_frame:
-                  {}
-              left_rear_wheel:
-                {}
-              merged_lrf:
-                {}
-              rear_bottom_lrf:
-                {}
-              right_rear_wheel:
-                {}
-              steer:
-                {}
-              steer_left:
-                left_front_wheel:
-                  {}
-              steer_right:
-                right_front_wheel:
-                  {}
+        {}
       Update Interval: 0
       Value: true
     - Class: rviz/Group
@@ -231,7 +109,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 3
-          Size (m): 0.1
+          Size (m): 0.100000001
           Style: Flat Squares
           Topic: /merged_cloud
           Unreliable: false
@@ -261,7 +139,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 3
-          Size (m): 0.01
+          Size (m): 0.00999999978
           Style: Boxes
           Topic: /camera/depth/points
           Unreliable: false
@@ -291,7 +169,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 3
-          Size (m): 0.3
+          Size (m): 0.300000012
           Style: Flat Squares
           Topic: /base_scan
           Unreliable: false
@@ -301,8 +179,8 @@ Visualization Manager:
         - Alpha: 1
           Autocompute Intensity Bounds: true
           Autocompute Value Bounds:
-            Max Value: -0.371993
-            Min Value: -9.20868
+            Max Value: -0.371993005
+            Min Value: -9.20868015
             Value: true
           Axis: X
           Channel Name: intensity
@@ -321,7 +199,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 3
-          Size (m): 0.3
+          Size (m): 0.300000012
           Style: Flat Squares
           Topic: /base_scan2
           Unreliable: false
@@ -332,7 +210,7 @@ Visualization Manager:
           Autocompute Intensity Bounds: true
           Autocompute Value Bounds:
             Max Value: 0.75
-            Min Value: -0.241159
+            Min Value: -0.241159007
             Value: true
           Axis: Z
           Channel Name: intensity
@@ -351,7 +229,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 3
-          Size (m): 0.1
+          Size (m): 0.100000001
           Style: Flat Squares
           Topic: /base_scan1_fix
           Unreliable: false
@@ -381,7 +259,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 3
-          Size (m): 0.3
+          Size (m): 0.300000012
           Style: Flat Squares
           Topic: /scan_multi
           Unreliable: false
@@ -392,25 +270,33 @@ Visualization Manager:
       Name: Sensing
     - Class: rviz/Group
       Displays:
-        - Angle Tolerance: 0.1
+        - Angle Tolerance: 0.100000001
           Class: rviz/Odometry
           Color: 255; 25; 0
           Enabled: false
           Keep: 100
           Length: 1
           Name: Odometry
-          Position Tolerance: 0.1
+          Position Tolerance: 0.100000001
           Topic: /odom
           Value: false
-        - Arrow Length: 0.3
+        - Alpha: 1
+          Arrow Length: 0.300000012
+          Axes Length: 0.300000012
+          Axes Radius: 0.00999999978
           Class: rviz/PoseArray
           Color: 255; 25; 0
           Enabled: false
+          Head Length: 0.0700000003
+          Head Radius: 0.0299999993
           Name: PoseArray
+          Shaft Length: 0.230000004
+          Shaft Radius: 0.00999999978
+          Shape: Arrow (Flat)
           Topic: /particlecloud
           Unreliable: false
           Value: false
-        - Alpha: 0.7
+        - Alpha: 0.699999988
           Class: rviz/Map
           Color Scheme: map
           Draw Behind: false
@@ -419,7 +305,7 @@ Visualization Manager:
           Topic: /map
           Unreliable: false
           Value: true
-        - Alpha: 0.7
+        - Alpha: 0.699999988
           Class: rviz/Map
           Color Scheme: costmap
           Draw Behind: true
@@ -428,7 +314,7 @@ Visualization Manager:
           Topic: /move_base/global_costmap/costmap
           Unreliable: false
           Value: true
-        - Alpha: 0.7
+        - Alpha: 0.699999988
           Class: rviz/Map
           Color Scheme: costmap
           Draw Behind: false
@@ -456,8 +342,8 @@ Visualization Manager:
         - Alpha: 1
           Autocompute Intensity Bounds: true
           Autocompute Value Bounds:
-            Max Value: 11.1779
-            Min Value: 0.805977
+            Max Value: 11.1779003
+            Min Value: 0.805976987
             Value: true
           Axis: X
           Channel Name: intensity
@@ -476,7 +362,7 @@ Visualization Manager:
           Queue Size: 10
           Selectable: true
           Size (Pixels): 3
-          Size (m): 0.01
+          Size (m): 0.00999999978
           Style: Flat Squares
           Topic: /move_base/TrajectoryPlannerROS/cost_cloud
           Unreliable: false
@@ -490,20 +376,20 @@ Visualization Manager:
               Class: rviz/Path
               Color: 25; 255; 0
               Enabled: true
-              Head Diameter: 0.3
-              Head Length: 0.2
-              Length: 0.3
+              Head Diameter: 0.300000012
+              Head Length: 0.200000003
+              Length: 0.300000012
               Line Style: Lines
-              Line Width: 0.03
+              Line Width: 0.0299999993
               Name: GobalPathPlan
               Offset:
                 X: 0
                 Y: 0
                 Z: 0
               Pose Style: None
-              Radius: 0.03
-              Shaft Diameter: 0.1
-              Shaft Length: 0.1
+              Radius: 0.0299999993
+              Shaft Diameter: 0.100000001
+              Shaft Length: 0.100000001
               Topic: /move_base/TebLocalPlannerROS/global_plan
               Unreliable: false
               Value: true
@@ -512,9 +398,9 @@ Visualization Manager:
               Class: rviz/Path
               Color: 255; 85; 255
               Enabled: true
-              Head Diameter: 0.3
-              Head Length: 0.2
-              Length: 0.3
+              Head Diameter: 0.300000012
+              Head Length: 0.200000003
+              Length: 0.300000012
               Line Style: Billboards
               Line Width: 0.5
               Name: LocalPathPlan
@@ -523,9 +409,9 @@ Visualization Manager:
                 Y: 0
                 Z: 0
               Pose Style: None
-              Radius: 0.03
-              Shaft Diameter: 0.1
-              Shaft Length: 0.1
+              Radius: 0.0299999993
+              Shaft Diameter: 0.100000001
+              Shaft Length: 0.100000001
               Topic: /move_base/TebLocalPlannerROS/local_plan
               Unreliable: false
               Value: true
@@ -538,20 +424,20 @@ Visualization Manager:
               Class: rviz/Path
               Color: 255; 85; 255
               Enabled: true
-              Head Diameter: 0.3
-              Head Length: 0.2
-              Length: 0.3
+              Head Diameter: 0.300000012
+              Head Length: 0.200000003
+              Length: 0.300000012
               Line Style: Lines
-              Line Width: 0.03
+              Line Width: 0.0299999993
               Name: GlobalPathPlan
               Offset:
                 X: 0
                 Y: 0
                 Z: 0
               Pose Style: None
-              Radius: 0.03
-              Shaft Diameter: 0.1
-              Shaft Length: 0.1
+              Radius: 0.0299999993
+              Shaft Diameter: 0.100000001
+              Shaft Length: 0.100000001
               Topic: /move_base/DWAPlannerROS/global_plan
               Unreliable: false
               Value: true
@@ -560,9 +446,9 @@ Visualization Manager:
               Class: rviz/Path
               Color: 255; 85; 255
               Enabled: true
-              Head Diameter: 0.3
-              Head Length: 0.2
-              Length: 0.3
+              Head Diameter: 0.300000012
+              Head Length: 0.200000003
+              Length: 0.300000012
               Line Style: Billboards
               Line Width: 0.5
               Name: LocalPathPlan
@@ -571,9 +457,9 @@ Visualization Manager:
                 Y: 0
                 Z: 0
               Pose Style: None
-              Radius: 0.03
-              Shaft Diameter: 0.1
-              Shaft Length: 0.1
+              Radius: 0.0299999993
+              Shaft Diameter: 0.100000001
+              Shaft Length: 0.100000001
               Topic: /move_base/DWAPlannerROS/local_plan
               Unreliable: false
               Value: true
@@ -586,20 +472,20 @@ Visualization Manager:
               Class: rviz/Path
               Color: 255; 85; 255
               Enabled: true
-              Head Diameter: 0.3
-              Head Length: 0.2
-              Length: 0.3
+              Head Diameter: 0.300000012
+              Head Length: 0.200000003
+              Length: 0.300000012
               Line Style: Lines
-              Line Width: 0.03
+              Line Width: 0.0299999993
               Name: GlobalPathPlan
               Offset:
                 X: 0
                 Y: 0
                 Z: 0
               Pose Style: None
-              Radius: 0.03
-              Shaft Diameter: 0.1
-              Shaft Length: 0.1
+              Radius: 0.0299999993
+              Shaft Diameter: 0.100000001
+              Shaft Length: 0.100000001
               Topic: /move_base/TrajectoryPlannerROS/global_plan
               Unreliable: false
               Value: true
@@ -608,9 +494,9 @@ Visualization Manager:
               Class: rviz/Path
               Color: 255; 85; 255
               Enabled: true
-              Head Diameter: 0.3
-              Head Length: 0.2
-              Length: 0.3
+              Head Diameter: 0.300000012
+              Head Length: 0.200000003
+              Length: 0.300000012
               Line Style: Billboards
               Line Width: 0.5
               Name: LocalPathPlan
@@ -619,9 +505,9 @@ Visualization Manager:
                 Y: 0
                 Z: 0
               Pose Style: None
-              Radius: 0.03
-              Shaft Diameter: 0.1
-              Shaft Length: 0.1
+              Radius: 0.0299999993
+              Shaft Diameter: 0.100000001
+              Shaft Length: 0.100000001
               Topic: /move_base/TrajectoryPlannerROS/local_plan
               Unreliable: false
               Value: true
@@ -632,7 +518,7 @@ Visualization Manager:
           Marker Topic: /next_waypoint
           Name: NextWaypointMarker
           Namespaces:
-            "": true
+            {}
           Queue Size: 100
           Value: true
       Enabled: true
@@ -648,36 +534,12 @@ Visualization Manager:
           Show Visual Aids: false
           Update Topic: /cube/update
           Value: true
-        - Class: jsk_rviz_plugin/BoundingBoxArray
-          Enabled: true
-          Name: Clustering
-          Topic: /clustering_result
-          Unreliable: false
-          Value: true
-          alpha: 0.8
-          color: 85; 255; 255
-          coloring: Flat color
-          line width: 0.005
-          only edge: false
-          show coords: false
-        - Class: jsk_rviz_plugin/BoundingBoxArray
-          Enabled: true
-          Name: Recognized
-          Topic: /recognized_result
-          Unreliable: false
-          Value: true
-          alpha: 0.8
-          color: 0; 0; 255
-          coloring: Flat color
-          line width: 0.005
-          only edge: false
-          show coords: false
         - Class: rviz/MarkerArray
           Enabled: true
           Marker Topic: /waypoint_markers
           Name: MarkerArray_WayPoints
           Namespaces:
-            "": true
+            {}
           Queue Size: 100
           Value: true
       Enabled: true
@@ -706,19 +568,21 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 27.0503
+      Distance: 27.0503006
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.06
+        Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 5.67418
-        Y: 0.78495
-        Z: 8.04663e-07
+        X: 5.67418003
+        Y: 0.784950018
+        Z: 8.04662989e-07
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
       Name: Current View
-      Near Clip Distance: 0.01
-      Pitch: 0.629801
+      Near Clip Distance: 0.00999999978
+      Pitch: 0.629800975
       Target Frame: map
       Value: ThirdPersonFollower (rviz)
       Yaw: 0.660402
@@ -726,10 +590,10 @@ Visualization Manager:
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1002
+  Height: 769
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000020f00000362fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000362000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000242fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000002800000242000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000067b0000003efc0100000002fb0000000800540069006d006501000000000000067b0000027200fffffffb0000000800540069006d00650100000000000004500000000000000000000004660000036200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000020f00000277fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000277000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000242fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000002800000242000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004de0000003efc0100000002fb0000000800540069006d00650100000000000004de0000030000fffffffb0000000800540069006d00650100000000000004500000000000000000000002c90000027700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -738,6 +602,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1659
-  X: 49
-  Y: 14
+  Width: 1246
+  X: 231
+  Y: 45
