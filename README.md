@@ -1,4 +1,4 @@
-# cirkit_unit03_apps [![Build Status](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps.svg?branch)](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps) [![Slack](https://img.shields.io/badge/Slack-CIR--KIT-blue.svg)](http://cir-kit.slack.com/messages/unit03_apps)
+# cirkit_unit03_apps [![Build Status](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps.svg?branch=kinetic-devel)](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_apps) [![Slack](https://img.shields.io/badge/Slack-CIR--KIT-blue.svg)](http://cir-kit.slack.com/messages/unit03_apps)
 Application packages for CIR-KIT-Unit03
 
 For CIR-KIT-Unit03 instructions and tutorials, please see http://wiki.ros.org/Robots/CIR-KIT-Unit03.
