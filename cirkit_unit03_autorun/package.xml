@@ -22,7 +22,6 @@
   <exec_depend>map_server</exec_depend>
   <exec_depend>rviz</exec_depend>
   <exec_depend>point_cloud_reducer</exec_depend>
-  <exec_depend>steer_drive_controller</exec_depend>
   <exec_depend>topic_tools</exec_depend>
 
   <export>
