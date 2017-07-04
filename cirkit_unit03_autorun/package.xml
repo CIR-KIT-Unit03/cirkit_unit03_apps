@@ -11,14 +11,6 @@
   <author email="cirkit.infomation@gmail.com">CIR-KIT</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <exec_depend>cirkit_unit03_amcl</exec_depend>
-  <exec_depend>cirkit_unit03_bringup</exec_depend>
-  <exec_depend>cirkit_unit03_control</exec_depend>
-  <exec_depend>cirkit_unit03_gazebo</exec_depend>
-  <exec_depend>cirkit_unit03_gmapping</exec_depend>
-  <exec_depend>cirkit_unit03_maps</exec_depend>
-  <exec_depend>cirkit_unit03_move_base</exec_depend>
-  <exec_depend>human_model_gazebo</exec_depend>
   <exec_depend>map_server</exec_depend>
   <exec_depend>rviz</exec_depend>
   <exec_depend>point_cloud_reducer</exec_depend>
