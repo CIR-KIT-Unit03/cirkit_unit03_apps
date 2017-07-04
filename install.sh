@@ -51,7 +51,7 @@ do
 done
 
 # Clone cirkit_unit03_pkgs repository
-git clone https://github.com/CIR-KIT-Unit03/cirkit_unit03_pkgs.git ../cirkit_unit03_pkgs
+git clone -b kinetic-devel https://github.com/CIR-KIT-Unit03/cirkit_unit03_pkgs.git ../cirkit_unit03_pkgs
 
 # Download required packages by wstool.
 cd ../../
